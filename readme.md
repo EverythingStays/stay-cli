@@ -1,6 +1,20 @@
-## es-cli
+## everythingstays-cli
 
 CLI for installing and publishing packages to IPFS easily
+
+## Requirements
+
+* NodeJS version 4 or higher
+* NPM version 3 or higher
+* IPFS version 0.3.11 or higher
+
+NOTE: This is the minimum requirements that has been tested, it might work on lower versions. If it does, please let me know.
+
+## Installation
+
+`npm install -g everythingstays-cli`
+
+Now `es` is in your PATH
 
 ### Commands
 
