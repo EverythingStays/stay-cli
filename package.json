@@ -1,6 +1,6 @@
 {
   "name": "stay-cli",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "CLI for installing and publishing packages to IPFS easily",
   "main": "cli.js",
   "scripts": {
