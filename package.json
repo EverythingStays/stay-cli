@@ -1,5 +1,5 @@
 {
-  "name": "everythingstays-cli",
+  "name": "stay-cli",
   "version": "0.0.1",
   "description": "CLI for installing and publishing packages to IPFS easily",
   "main": "cli.js",
@@ -9,7 +9,15 @@
   "bin": {
     "es": "./cli.js"
   },
-  "keywords": ["ipfs", "cli", "everythingstays"],
+  "keywords": [
+    "ipfs",
+    "cli",
+    "everythingstays"
+  ],
   "author": "Victor Bjelkholm <victorbjelkholm@gmail.com> (https://www.github.com/victorbjelkholm)",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "mkdirp": "0.5.1",
+    "node-fetch": "1.4.1"
+  }
 }
