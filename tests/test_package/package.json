@@ -1,0 +1,8 @@
+{
+  "name": "TestPackage",
+  "version": "0.0.1",
+  "scripts": {
+    "preinstall": "something",
+    "prepublish": "another-something"
+  }
+}
