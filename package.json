@@ -5,7 +5,9 @@
   "main": "cli.js",
   "scripts": {
     "test": "mocha tests",
-    "test:watch": "npm test -- --growl --watch"
+    "test:watch": "npm test -- --growl --watch",
+    "preinstall": "./get-deps.sh",
+    "prepublish": "./publish-dep.sh"
   },
   "bin": {
     "stay": "./cli.js"
