@@ -5,7 +5,7 @@ CLI for installing and publishing packages to IPFS easily
 ## Requirements
 
 * NodeJS version 4 or higher
-* NPM version 3 or higher
+* NPM version ~2 (broken on version 3 because of https://github.com/npm/npm/issues/10379)
 * IPFS version 0.3.11 or higher
 
 NOTE: This is the minimum requirements that has been tested, it might work on lower versions. If it does, please let me know.
