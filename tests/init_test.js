@@ -1,11 +1,11 @@
 /* global describe, it, beforeEach */
 const assert = require('assert')
-const install = require('../lib/install')
+const install = require('../lib/init')
 const join = require('path').join
 
 const helpers = require('./helpers')
 
-describe('Install Lib', () => {
+describe('Init Lib', () => {
   const package_path = join(__dirname, '/test_package')
   beforeEach(() => {
     helpers.writeNotInstalledPkgJSON(package_path)

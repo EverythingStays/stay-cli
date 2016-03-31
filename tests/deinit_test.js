@@ -1,11 +1,11 @@
 /* global describe, it */
 const assert = require('assert')
-const uninstall = require('../lib/uninstall')
+const uninstall = require('../lib/deinit')
 const join = require('path').join
 
 const helpers = require('./helpers')
 
-describe('Uninstall Lib', () => {
+describe('Deinit Lib', () => {
   const package_path = join(__dirname, '/test_package')
   it('Uninstall scripts', () => {
     helpers.writeInstalledPkgJSON(package_path)
