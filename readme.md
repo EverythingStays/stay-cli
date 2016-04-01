@@ -18,21 +18,29 @@ Now `stay` is in your PATH
 
 ### Commands
 
-`init`
+`stay init`
 
 Installs shell-scripts in your repository and package.json to run on `npm install` and `npm publish`
 
-`deinit`
+`stay deinit`
 
 Removes the shell-scripts
 
-`install`
+`stay install`
 
 Install dependencies from the `esDependencies` key in the `package.json`
 
-`add module@version`
+`stay add module@version`
 
 Adds a module to your `package.json`
+
+`stay connect multiaddr`
+
+Adds a node that will pin your published module when running `npm publish`.
+
+If you have `ipfs daemon` running on a instance, you can run `ipfs id` to get a list of addresses that the daemon is listening to.
+
+Use a public address like this: `stay connect /ip4/10.13.0.5/tcp/4001/ipfs/QmPimdxPFy5K1VdCVfe8JsUd6DpdmKQDTdYCmCfReMQ7YY`
 
 ### How to publish packages?
 
@@ -44,7 +52,8 @@ Adds a module to your `package.json`
 ### How to install packages?
 
 * Run `stay init` in your repository
-* Copy `dependencies` from `package.json` to `esDependencies` in the same file, replacing the version with the hash from `npm publish`
+* Publish the dependencies you need, you'll get a hash back when publishing.
+* Copy `dependencies` from `package.json` to `esDependencies` in the same file, replacing the version with the hash from `npm publish` in the dependency publish
 * Commit your changes
-* Run `npm install`
+* Run `stay install`
 
