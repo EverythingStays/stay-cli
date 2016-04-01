@@ -1,7 +1,7 @@
-const uninstall = require('../lib/uninstall')
+const deinit = require('../lib/deinit')
 
 module.exports = (args) => {
-  uninstall(process.cwd())
+  deinit(process.cwd())
   console.log('Removed scripts, don\'t forget to commit your changes')
   process.exit(0)
 }

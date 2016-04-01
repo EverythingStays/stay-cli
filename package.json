@@ -27,6 +27,7 @@
     "mocha": "2.4.5"
   },
   "esDependencies": {
-    "mkdirp": "QmT3Nsk2ijH2PrnPzPJpVDKQg43Rhdj2Rc4nYvLDiY7FPp"
+    "mkdirp": "QmNe2eWvbapjxn5FSVFZS1NxvgFUNwQcg5UYZPMLYRVKmK",
+    "node-fetch": "QmaAhfyydWWTvtCrTjyo28EmWmr9shidd4GiKqqmknPWNN"
   }
 }
