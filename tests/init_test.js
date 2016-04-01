@@ -14,7 +14,6 @@ describe('Init Lib', () => {
     helpers.writeNotInstalledPkgJSON(package_path)
     install(package_path)
     const pkg = helpers.readPkgJson(package_path)
-    assert.strictEqual(pkg.scripts.preinstall, './get-deps.sh')
     assert.strictEqual(pkg.scripts.prepublish, './publish-dep.sh')
   })
   it('Does not overwrite existing scripts', () => {
@@ -26,7 +25,6 @@ describe('Init Lib', () => {
       error = err
     }
     const pkg = helpers.readPkgJson(package_path)
-    assert.notEqual(pkg.scripts.preinstall, './get-deps.sh')
     assert.notEqual(pkg.scripts.prepublish, './publish-dep.sh')
     assert(error)
   })

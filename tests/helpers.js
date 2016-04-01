@@ -10,7 +10,6 @@ const otherScriptsPkg = {
   name: 'TestPackage',
   version: '0.0.1',
   scripts: {
-    preinstall: 'something',
     prepublish: 'another-something'
   }
 }
@@ -19,7 +18,6 @@ const installedPkg = {
   name: 'TestPackage',
   version: '0.0.1',
   scripts: {
-    preinstall: './get-deps.sh',
     prepublish: './publish-dep.sh'
   }
 }
